@@ -1,5 +1,5 @@
 import { iconClose, iconPinterest, imageCuriosityDesktop } from "./assets";
-import { Hero, Navbar, About, Projects } from "./components";
+import { Hero, Navbar, About, Projects, Footer } from "./components";
 
 function App() {
   return (
@@ -11,6 +11,13 @@ function App() {
           <About />
           <Projects />
         </div>
+      </div>
+
+      <div className="bg-black flex flex-col items-center justify-start sm:px-14 px-6">
+        <div className="w-full max-w-[1110px] ">
+          <Footer />
+        </div>
+        
       </div>
     </>
   );

@@ -16,11 +16,14 @@ export default {
       xxs:"375px",
       xs: "480px",
       sm: "576px",
+      mds:"644px",
       md: "768px",
       lg: "992px",
       xl: "1350px",
       xxl: "1440px",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
