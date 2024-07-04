@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { iconClose, iconHamburger, logo } from "../assets";
 
 const Navbar = () => {
@@ -6,7 +6,18 @@ const Navbar = () => {
 
   const handleToggle = () => {
     setToggle(t => !t)
+   
   }
+
+  useEffect(()=>{
+    
+     if(toggle){
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+  },[toggle])
 
   return (
     <nav className="w-full flex items-center justify-between">
