@@ -4,18 +4,10 @@ import { Hero, Navbar, About, Projects } from "./components";
 function App() {
   return (
     <>
-      <div>
-        <div>
-          <div>
-            <Navbar />
-          </div>
-        </div>
+      <Hero />
 
-        <Hero />
-      </div>
-
-      <div>
-        <div>
+      <div className="py-14 sm:px-14 px-6 flex flex-col items-center justify-start">
+        <div className="w-full max-w-[1110px] ">
           <About />
           <Projects />
         </div>
